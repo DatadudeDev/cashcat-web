@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "CashCat | Get Paid to Shop!",
+  "version": "1.1",
+  "description": "CashCat pays you instantly to shop online. Start earning today!",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.amazon.ca/*",
+    "https://www.amazon.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.ca/gp/buy/*",
+        "https://www.amazon.ca/checkout/*",
+        "https://www.amazon.com/gp/buy/*",
+        "https://www.amazon.com/checkout/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    },
+    "default_title": "CashCat | Get Paid to Shop!",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,13 @@
+amazon-scraper-extension/
+│
+├── styles.css
+├── popup.html
+├── popup.html
+├── content.js
+├── script.js
+├── background.js
+├── manifest.json
+├── logo.png
+├── structure.txt
+
+
