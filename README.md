@@ -1,4 +1,4 @@
-# CashCat
+# Scamology 101: CashCat - A reverse engineered Honey demo
 
 ![Project Logo](https://github.com/user-attachments/assets/68f7a248-f396-4839-89a0-20a7df121cd9)
 
